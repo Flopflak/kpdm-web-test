@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+}
+
+#holder {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+#expandedPopUp {
+    padding: auto;
+    width: 90vw;
+    max-width: 90vw;
+    height: 90vh;
+    overflow: scroll;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+}
+
+#expandedPopUp h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12vh;
+    color: #000000; /* #00008B; */
+    margin: 15px;
+    text-align: center;
+}
+
+#expandedPopUp h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6vh;
+    color: #000000; /* #00008B; */
+    margin: 10px;
+}
+
+#expandedPopUp p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3vh;
+    margin: 15px;
+    color: #000000; /* #00008B; */
+    white-space: pre-wrap;
+}
+
+#closePopUpButton {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    border-radius: 15px;
+    border-width: 0;
+    transition: ease-in-out 150ms;
+    display: block;
+    right: 1%;
+    padding: auto;
+    padding-top: 5px;
+}
+
+#closePopUpButton:hover {
+    background-color: rgb(220, 220, 220);
+    transition: ease-in-out 150ms;
+}
+
+.popUpImage {
+    width: 50vw;
+    border-radius: 5px;
+    padding: auto;
+    margin: auto;
+}
+
+.slide {
+    scroll-snap-align: start;
+    width: 90%;
+    height: 100vh;
+    overflow: scroll;
+    background-color: #6ec1e4;
+    margin: auto;
+    scroll-snap-align: start;
+    padding: 5vw;
+    white-space: pre-wrap;
+}
+
+#mainLogo {
+    margin: auto;
+    display: flex;
+    height: 85%;
+    width: auto;
+}
+
+.slide h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 12vh;
+    color: #ffffff; /* #00008B; */
+    margin: 15px;
+    margin-top: 45px;
+}
+
+.slide h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8vh;
+    color: #ffffff; /* #00008B; */
+    margin: 10px;
+}
+
+.slide p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 5vh;
+    margin: 15px;
+    color: #ffffff; /* #00008B; */
+}
+
+.imageDivider {
+    width: 100%;
+    height: auto;
+    filter: blur(0px);
+}
+
+
+.linkButton {
+    width: fit-content;
+    height: 30px;
+    font-size: 120%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-width: 0;
+    transition: ease-in-out 50ms;
+    justify-content: space-evenly;
+    color: #6ec1e4; /* #00008B; */
+    margin: 0px 15px 0px 15px;
+}
+
+.linkButton:hover {
+    background-color: rgb(220, 220, 220);
+    transition: ease-in-out 150ms;
+    color: #6ec1e4;
+    background-color: #f0f0f0;
+}
+
+#menu {
+    margin: 20px auto;
+    padding: 20px;
+    width: fit-content;
+    min-width: fit-content;
+    height: min-content;
+    max-height: 75px;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 998;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    #mainLogo {
+        margin-top: 45%;
+        width: 100%;
+        height: auto;
+    }
+    .slide {
+        width: 90%;
+        height: 97vh;
+        min-height: fit-content;
+        background-color: #6ec1e4;
+        margin: auto;
+        scroll-snap-type: both mandatory;
+        padding: 5vw;
+    }
+    #menu {
+        display: none;
+        margin: 20px;
+        width: fit-content;
+        height: 80vh;
+        position: absolute;
+        background-color: white;
+        border-radius: 15px;
+        z-index: 998;
+    }
+    .linkButton {
+        width: 70vw;
+        height: 10%;
+        min-height: fit-content;
+        font-size: 4vh;
+        background-color: white;
+        border-radius: 5px;
+        border-width: 0;
+        transition: ease-in-out 150ms;
+        margin: 15px;
+        color: #6ec1e4;
+    }
+    .slide h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 4vh;
+        color: white;
+        margin: 15px;
+        margin-top: 15%;
+    }
+    .slide p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3vh;
+        margin: 15px;
+        color: white;
+    }
+    .imageDivider {
+        width: 100%;
+        height: auto;
+        filter: blur(3px);
+    }
+}
