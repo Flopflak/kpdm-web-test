@@ -180,6 +180,7 @@ body {
     left: calc(50% - 25px);
     top: 90%;
     transition: ease-in-out 150ms;
+    padding-top: 10px;
 }
 
 #nextButton:hover {
