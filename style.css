@@ -170,6 +170,22 @@ body {
     justify-content: center;
 }
 
+#nextButton {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: #ffffff;
+    background-color: #ffffff;
+    left: calc(50% - 25px);
+    top: 90%;
+    transition: ease-in-out 150ms;
+}
+
+#nextButton:hover {
+    background-color: #f0f0f0;
+}
+
 @media screen and (max-width: 800px) {
     #mainLogo {
         margin-top: 45%;
